@@ -1,0 +1,11 @@
+.env
+.env.*
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/node_modules/
+backend/uploads/
+backend/*.db
+frontend/node_modules/
+node_modules/

@@ -1,0 +1,1541 @@
+/* =========================================================
+   LEARNING PAGE
+========================================================= */
+
+.learning-page {
+  min-height: 100vh;
+  background: #f7f8fb;
+  color: #111827;
+  padding-bottom: 60px;
+}
+
+.learning-topbar {
+  height: 76px;
+  padding: 0 36px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8ebf0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.learning-back-button,
+.concept-back {
+  border: 0;
+  background: transparent;
+  color: #4b5563;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.learning-back-button:hover,
+.concept-back:hover {
+  color: #111827;
+}
+
+.learning-topbar-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.learning-topbar-title span {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 800;
+  color: #9ca3af;
+}
+
+.learning-topbar-title strong {
+  font-size: 15px;
+}
+
+/* HERO */
+
+.learning-hero {
+  max-width: 1180px;
+  margin: 34px auto 0;
+  padding: 46px;
+  border-radius: 24px;
+  background: #111827;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: center;
+}
+
+.learning-eyebrow {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  color: #6b7280;
+}
+
+.learning-hero .learning-eyebrow {
+  color: #cbd5e1;
+}
+
+.learning-hero h1 {
+  margin: 12px 0 12px;
+  font-size: 42px;
+  line-height: 1.08;
+}
+
+.learning-hero p {
+  max-width: 720px;
+  color: #d1d5db;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.learning-tags {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.learning-tags span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.learning-progress-card {
+  background: #ffffff;
+  color: #111827;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+}
+
+.learning-progress-card span {
+  display: block;
+  color: #6b7280;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+}
+
+.learning-progress-card strong {
+  display: block;
+  margin: 10px 0;
+  font-size: 42px;
+}
+
+.learning-progress-card small {
+  display: block;
+  margin-top: 12px;
+  color: #6b7280;
+}
+
+.learning-progress-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.learning-progress-track div {
+  height: 100%;
+  background: #111827;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+/* MISSING SKILLS */
+
+.missing-skills-learning,
+.roadmap-section,
+.concept-page {
+  max-width: 1180px;
+  margin: 28px auto 0;
+}
+
+.missing-skills-learning {
+  background: #ffffff;
+  border: 1px solid #e8ebf0;
+  border-radius: 20px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.missing-skills-learning h2 {
+  margin: 7px 0;
+  font-size: 24px;
+}
+
+.missing-skills-learning p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.missing-learning-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.missing-learning-list span {
+  padding: 10px 13px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ROADMAP */
+
+.roadmap-section {
+  background: #ffffff;
+  border: 1px solid #e8ebf0;
+  border-radius: 22px;
+  padding: 34px;
+}
+
+.roadmap-heading h2 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.roadmap-heading p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.roadmap {
+  margin-top: 28px;
+}
+
+.roadmap-stage {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.stage-header {
+  width: 100%;
+  border: 0;
+  background: #ffffff;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.stage-header:hover,
+.stage-header.open {
+  background: #f8fafc;
+}
+
+.stage-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #111827;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.stage-title {
+  flex: 1;
+}
+
+.stage-title strong {
+  display: block;
+  font-size: 16px;
+}
+
+.stage-title small {
+  display: block;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.stage-arrow {
+  font-size: 24px;
+  color: #6b7280;
+}
+
+.concept-grid {
+  padding: 0 18px 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.concept-card {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.concept-card:hover {
+  transform: translateY(-2px);
+  border-color: #111827;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+}
+
+.concept-card.completed {
+  border-color: #9ca3af;
+}
+
+.concept-number {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.concept-card-body {
+  min-width: 0;
+}
+
+.concept-card-body > span {
+  color: #9ca3af;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.concept-card-body h3 {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.concept-card-body p {
+  margin: 0 0 12px;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.concept-card-body strong {
+  font-size: 12px;
+}
+
+/* CONCEPT PAGE */
+
+.concept-page {
+  margin-top: 30px;
+}
+
+.concept-back {
+  margin-bottom: 18px;
+}
+
+.concept-hero {
+  background: #111827;
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 42px;
+}
+
+.concept-hero .learning-eyebrow {
+  color: #cbd5e1;
+}
+
+.concept-hero h1 {
+  margin: 10px 0;
+  font-size: 38px;
+}
+
+.concept-hero p {
+  margin: 0;
+  max-width: 850px;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.concept-content-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.concept-content-card,
+.examples-card,
+.practice-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.content-card-heading {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.content-card-heading > span {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  flex: 0 0 38px;
+}
+
+.content-card-heading small {
+  display: block;
+  color: #9ca3af;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.content-card-heading h2 {
+  margin: 4px 0 0;
+  font-size: 21px;
+}
+
+.large-explanation {
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 24px 0 0;
+}
+
+.types-list {
+  margin-top: 20px;
+}
+
+.types-list div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.types-list span {
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.types-list p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+/* EXAMPLES */
+
+.examples-card {
+  margin-top: 18px;
+}
+
+.examples-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.example-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.example-label {
+  padding: 10px 14px;
+  background: #f8fafc;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #6b7280;
+}
+
+.example-item pre,
+.correction-box pre,
+.starter-code {
+  margin: 0;
+  padding: 18px;
+  background: #111827;
+  color: #f9fafb;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.example-item p {
+  padding: 0 16px 16px;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* PRACTICE */
+
+.practice-card {
+  margin-top: 18px;
+}
+
+.practice-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.practice-heading h2 {
+  margin: 7px 0;
+  font-size: 26px;
+}
+
+.practice-heading p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.practice-badge {
+  height: fit-content;
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.practice-question {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.practice-question > span {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #9ca3af;
+  font-weight: 900;
+}
+
+.practice-question h3 {
+  margin: 8px 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.starter-code {
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.practice-editor {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 18px;
+  resize: vertical;
+  outline: none;
+  background: #111827;
+  color: #ffffff;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.practice-editor:focus {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 3px #f3f4f6;
+}
+
+.practice-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.check-answer-button,
+.next-concept-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.check-answer-button:hover,
+.next-concept-button:hover {
+  opacity: 0.88;
+}
+
+.reset-answer-button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.hint-box {
+  margin-top: 18px;
+  padding: 15px 17px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.hint-box strong {
+  font-size: 12px;
+}
+
+.hint-box p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* RESULT */
+
+.practice-result {
+  margin-top: 18px;
+  border-radius: 15px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.practice-result.correct {
+  background: #f3f4f6;
+}
+
+.practice-result.incorrect {
+  background: #fafafa;
+}
+
+.result-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #111827;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 38px;
+  font-weight: 900;
+}
+
+.result-content {
+  flex: 1;
+}
+
+.result-content h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.result-content > p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.correction-box {
+  margin-top: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.correction-box > span {
+  display: block;
+  padding: 9px 12px;
+  background: #f3f4f6;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  font-weight: 900;
+}
+
+.correction-box pre {
+  border-radius: 0;
+}
+
+.next-concept-button {
+  margin-top: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .learning-hero,
+  .missing-skills-learning,
+  .concept-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-grid,
+  .examples-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-hero,
+  .roadmap-section,
+  .concept-hero,
+  .concept-content-card,
+  .examples-card,
+  .practice-card {
+    padding: 24px;
+  }
+
+  .learning-hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .learning-topbar {
+    padding: 0 16px;
+  }
+
+  .learning-topbar-title span {
+    display: none;
+  }
+
+  .learning-hero,
+  .missing-skills-learning,
+  .roadmap-section,
+  .concept-page {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .learning-hero {
+    margin-top: 18px;
+    padding: 24px;
+  }
+
+  .learning-hero h1 {
+    font-size: 28px;
+  }
+
+  .stage-header {
+    padding: 14px;
+  }
+
+  .concept-grid {
+    padding: 0 12px 12px;
+  }
+
+  .concept-card {
+    padding: 14px;
+  }
+
+  .practice-heading {
+    flex-direction: column;
+  }
+
+  .practice-actions {
+    flex-direction: column;
+  }
+
+  .check-answer-button,
+  .reset-answer-button {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   ENHANCED LEARNING UI
+   - smoother animations
+   - roadmap stage effects
+   - concept card animations
+   - visual learning flow / diagrams
+   - clickable type cards
+   - type detail panel
+   - improved code/example boxes
+========================================================= */
+
+/* PAGE POLISH */
+.learning-page {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(17, 24, 39, 0.035), transparent 28%),
+    radial-gradient(circle at 90% 10%, rgba(17, 24, 39, 0.03), transparent 24%),
+    #f7f8fb;
+}
+
+.learning-topbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 2px 18px rgba(17, 24, 39, 0.04);
+}
+
+.learning-back-button,
+.concept-back {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.learning-back-button:hover,
+.concept-back:hover {
+  transform: translateX(-3px);
+}
+
+/* HERO ANIMATION */
+.learning-hero,
+.concept-hero {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(17, 24, 39, 0.12);
+}
+
+.learning-hero::before,
+.concept-hero::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: -90px;
+  top: -120px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  animation: learningFloat 7s ease-in-out infinite;
+}
+
+.learning-hero::after,
+.concept-hero::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  right: 100px;
+  bottom: -120px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 50%;
+  animation: learningFloat 9s ease-in-out infinite reverse;
+}
+
+.learning-hero > *,
+.concept-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.learning-tags span {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.learning-tags span:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+}
+
+/* PROGRESS CARD */
+.learning-progress-card {
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.learning-progress-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(17, 24, 39, 0.14);
+}
+
+.learning-progress-track div {
+  background: linear-gradient(90deg, #111827, #4b5563);
+  animation: progressGlow 2.4s ease-in-out infinite;
+}
+
+/* COMMON CONTENT CARDS */
+.missing-skills-learning,
+.roadmap-section,
+.concept-content-card,
+.examples-card,
+.practice-card {
+  box-shadow: 0 8px 28px rgba(17, 24, 39, 0.055);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.missing-skills-learning:hover,
+.roadmap-section:hover,
+.concept-content-card:hover,
+.examples-card:hover,
+.practice-card:hover {
+  box-shadow: 0 14px 35px rgba(17, 24, 39, 0.08);
+}
+
+/* MISSING SKILLS */
+.missing-learning-list span {
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.missing-learning-list span:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+}
+
+/* ROADMAP */
+.roadmap-stage {
+  background: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  animation: slideUpFade 0.5s ease both;
+}
+
+.roadmap-stage:nth-child(2) { animation-delay: 0.06s; }
+.roadmap-stage:nth-child(3) { animation-delay: 0.12s; }
+.roadmap-stage:nth-child(4) { animation-delay: 0.18s; }
+.roadmap-stage:nth-child(5) { animation-delay: 0.24s; }
+
+.roadmap-stage:hover {
+  transform: translateY(-2px);
+  border-color: #cfd4dc;
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08);
+}
+
+.stage-header {
+  transition: background 0.25s ease, padding-left 0.25s ease;
+}
+
+.stage-header:hover {
+  padding-left: 24px;
+}
+
+.stage-number {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stage-header:hover .stage-number,
+.stage-header.open .stage-number {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 7px 18px rgba(17, 24, 39, 0.18);
+}
+
+.stage-arrow {
+  transition: transform 0.3s ease;
+}
+
+.stage-header.open .stage-arrow {
+  transform: rotate(90deg);
+}
+
+/* CONCEPT CARDS */
+.concept-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.035);
+  transition:
+    transform 0.25s cubic-bezier(.2,.8,.2,1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+  animation: cardAppear 0.45s ease both;
+}
+
+.concept-card:nth-child(2) { animation-delay: 0.04s; }
+.concept-card:nth-child(3) { animation-delay: 0.08s; }
+.concept-card:nth-child(4) { animation-delay: 0.12s; }
+.concept-card:nth-child(5) { animation-delay: 0.16s; }
+.concept-card:nth-child(6) { animation-delay: 0.20s; }
+
+.concept-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #111827;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.concept-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  border-color: #c5cad3;
+  background: #fcfcfd;
+  box-shadow: 0 15px 30px rgba(17, 24, 39, 0.10);
+}
+
+.concept-card:hover::before,
+.concept-card.completed::before {
+  transform: scaleY(1);
+}
+
+.concept-number {
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.concept-card:hover .concept-number {
+  transform: scale(1.08);
+  background: #111827;
+  color: #ffffff;
+}
+
+/* =========================================================
+   VISUAL LEARNING FLOW / DIAGRAM
+========================================================= */
+
+.concept-flow {
+  margin-top: 26px;
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.concept-flow-title {
+  margin-bottom: 16px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.concept-flow-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  min-width: 130px;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.flow-step:hover {
+  transform: translateY(-4px);
+  border-color: #111827;
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.10);
+}
+
+.flow-step strong {
+  display: block;
+  font-size: 13px;
+  color: #111827;
+}
+
+.flow-step small {
+  display: block;
+  margin-top: 5px;
+  color: #6b7280;
+  font-size: 10px;
+}
+
+.flow-arrow {
+  font-size: 22px;
+  font-weight: 900;
+  color: #9ca3af;
+  animation: arrowPulse 1.8s ease-in-out infinite;
+}
+
+/* =========================================================
+   CLICKABLE TYPE CARDS
+========================================================= */
+
+.types-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.types-list div,
+.types-list button {
+  position: relative;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.types-list div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.type-card,
+.types-list button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #111827;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.type-card:hover,
+.types-list button:hover {
+  transform: translateY(-3px);
+  border-color: #111827;
+  background: #f9fafb;
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.09);
+}
+
+.type-card:active,
+.types-list button:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.type-card span:first-child,
+.types-list button span:first-child {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  font-size: 10px;
+  font-weight: 900;
+  transition: background 0.22s ease, color 0.22s ease;
+}
+
+.type-card:hover span:first-child,
+.types-list button:hover span:first-child {
+  background: #111827;
+  color: #ffffff;
+}
+
+.type-card p,
+.types-list button p {
+  margin: 0;
+  color: #374151;
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.types-list .type-card.active,
+.types-list button.active {
+  border-color: #111827;
+  background: #f8fafc;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+}
+
+/* If old list markup is still present, keep it clean */
+.types-list > div > span {
+  flex: 0 0 25px;
+}
+
+/* =========================================================
+   TYPE DETAIL / DEEP EXPLANATION PANEL
+========================================================= */
+
+.type-detail-panel {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid #dfe3e8;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.08);
+  animation: detailReveal 0.35s ease both;
+}
+
+.type-detail-panel h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+.type-detail-panel > p {
+  margin: 10px 0 0;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+.type-detail-panel h4 {
+  margin: 22px 0 9px;
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.type-detail-panel pre,
+.type-syntax,
+.type-detail-code {
+  margin: 0;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #111827;
+  color: #f9fafb;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12px;
+  line-height: 1.7;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.12);
+}
+
+.type-examples {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.type-example-card {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 13px;
+  background: #ffffff;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.type-example-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 20px rgba(17, 24, 39, 0.08);
+}
+
+.type-example-card pre {
+  margin-top: 8px;
+}
+
+.type-use-box {
+  padding: 15px 16px;
+  border-radius: 13px;
+  background: #f3f4f6;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+/* =========================================================
+   DEEP EXPLANATION SECTIONS
+========================================================= */
+
+.deep-explanation,
+.concept-deep-info {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.explanation-box,
+.why-box,
+.how-box {
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  background: #ffffff;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.explanation-box:hover,
+.why-box:hover,
+.how-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(17, 24, 39, 0.07);
+}
+
+.explanation-box h3,
+.why-box h3,
+.how-box h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.explanation-box p,
+.why-box p,
+.how-box p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   EXAMPLES + CODE BOXES
+========================================================= */
+
+.example-item {
+  transition: transform 0.23s ease, box-shadow 0.23s ease, border-color 0.23s ease;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.035);
+}
+
+.example-item:hover {
+  transform: translateY(-4px);
+  border-color: #d1d5db;
+  box-shadow: 0 12px 25px rgba(17, 24, 39, 0.09);
+}
+
+.example-item pre,
+.correction-box pre,
+.starter-code {
+  position: relative;
+}
+
+.example-item pre::before,
+.starter-code::before {
+  content: "CODE";
+  display: block;
+  margin-bottom: 8px;
+  color: #9ca3af;
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  font-weight: 900;
+}
+
+/* PRACTICE */
+.practice-card {
+  overflow: hidden;
+}
+
+.practice-question {
+  border: 1px solid #edf0f3;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.practice-question:hover {
+  border-color: #d7dbe1;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
+}
+
+.practice-editor {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.practice-editor:focus {
+  transform: translateY(-1px);
+}
+
+.check-answer-button,
+.next-concept-button,
+.reset-answer-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.check-answer-button:hover,
+.next-concept-button:hover,
+.reset-answer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.12);
+  opacity: 1;
+}
+
+.check-answer-button:active,
+.next-concept-button:active,
+.reset-answer-button:active {
+  transform: translateY(0);
+}
+
+/* RESULT ANIMATION */
+.practice-result {
+  animation: detailReveal 0.35s ease both;
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes detailReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes arrowPulse {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+}
+
+@keyframes progressGlow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.18);
+  }
+}
+
+@keyframes learningFloat {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-12px, 10px);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE ENHANCEMENTS
+========================================================= */
+
+@media (max-width: 900px) {
+  .types-list,
+  .deep-explanation,
+  .concept-deep-info {
+    grid-template-columns: 1fr;
+  }
+
+  .type-examples {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-flow-diagram {
+    align-items: stretch;
+  }
+
+  .flow-step {
+    flex: 1 1 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .concept-flow {
+    padding: 16px;
+  }
+
+  .concept-flow-diagram {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .flow-arrow {
+    animation: arrowPulseMobile 1.8s ease-in-out infinite;
+  }
+
+  .type-detail-panel {
+    padding: 18px;
+  }
+
+  .type-detail-panel h3 {
+    font-size: 19px;
+  }
+
+  .types-list {
+    gap: 8px;
+  }
+
+  .concept-card:hover,
+  .example-item:hover,
+  .roadmap-stage:hover {
+    transform: none;
+  }
+}
+
+@keyframes arrowPulseMobile {
+  0%, 100% {
+    transform: rotate(90deg) translateX(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: rotate(90deg) translateX(4px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

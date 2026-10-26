@@ -1,0 +1,65 @@
+Day-1
+Develpers:-
+
+fast api: in python full stack
+*sql basic to advenaces
+*how Integeret the frountend and backend
+*angular, react js .api,flask 
+
+AI/ML Devloper:-
+
+*oops concepts
+*quarey in sql
+
+data anly /sciencs
+
+
+Day-2
+* Python basics
+* datatypes
+* loops
+* function(types)Encapsulation,Polymorphism,Inheritance(types in inheritances)
+* oops(types)
+
+
+Day-
+
+Statistics
+
+Collecting Data – Gathering data from different sources.
+Organizing Data – Arranging the collected data in a useful format.
+Analyzing Data – Finding patterns, relationships, averages, etc.
+Interpreting Data – Understanding what the analysis tells us.
+Presenting Data – Showing the results using tables, charts, or graphs.
+
+
+2. Population Data
+
+Population data means the data collected from every member of the population.
+
+
+3. Sample Data
+
+Sample data means data collected from only a smaller part of the population.
+
+
+-->
+
+Easy to remember:
+
+Mean → Average
+Median → Middle
+Mode → Most repeated
+
+
+
+1. Census
+
+Census means collecting data from every member of the population.
+
+
+2. Survey
+
+Survey means collecting data from a selected sample of the population.
+ 
+
